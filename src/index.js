@@ -1,16 +1,18 @@
+/*
+ * @Date: 2022-07-27 20:15:09
+ * @LastEditors: chend25
+ * @LastEditTime: 2022-08-30 22:59:06
+ * @FilePath: \cd-react\src\index.js
+ */
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 
-function App() {
-  return (
-    <div>
-      hello3
-    </div>
-  );
-}
+import App from "@/router/route.config.js"
 
-// ========================================
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
