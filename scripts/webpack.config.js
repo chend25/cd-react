@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-08-06 21:23:53
  * @LastEditors: chend25
- * @LastEditTime: 2022-08-29 22:52:21
+ * @LastEditTime: 2022-09-13 23:54:06
  * @FilePath: \cd-react\scripts\webpack.config.js
  */
 const path = require('path');
@@ -33,6 +33,14 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
     ]
   },
   plugins: [
